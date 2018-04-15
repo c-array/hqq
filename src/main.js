@@ -8,9 +8,8 @@ import store from './vuex/store'
 Vue.config.productionTip = false
 
 import "element-ui/lib/theme-chalk/index.css";
-import {Form,FormItem,Input,Button,Select,Option,DatePicker} from "element-ui";
-Vue.use(Form,FormItem,Input,Button,Select,Option,DatePicker);
-
+import ElementUI from 'element-ui';
+Vue.use(ElementUI);
 
 /* eslint-disable no-new */
 new Vue({

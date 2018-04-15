@@ -11,7 +11,7 @@ export default {
                     {
                         id:2,
                         name:"待审核",
-                        url:"/groceries",
+                        url:"groceries",
                     },
                     {
                         id:3,

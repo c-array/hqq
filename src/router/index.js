@@ -10,7 +10,7 @@ export default new Router({
       component: resolve => require(['@/components/main/index'],resolve),
       children:[
         {
-          path: 'groceries', //杂货铺-待审核
+          path: 'groceries/:title/:subtitle', //杂货铺-待审核
           name: 'groceries',
           component: resolve => require(['@/components/groceries/index'],resolve),
         },

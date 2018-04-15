@@ -8,3 +8,6 @@
 .el-menu {
   height: 100%;
 }
+.el-main {
+  padding: 0;
+}

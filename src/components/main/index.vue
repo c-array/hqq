@@ -12,7 +12,7 @@
                         <span>{{item.name}}</span>
                     </template>
                     <el-menu-item v-if="!tow.second" :key="tow.id" v-for="tow in item.second" :index="'' + tow.id">
-                        <router-link :to="tow.url" tag="span">{{tow.name}}</router-link>
+                        <router-link :to="{name:tow.url,params:{title:item.name,subtitle:tow.name}}" tag="span">{{tow.name}}</router-link>
                     </el-menu-item>
                     <el-submenu v-else :index="'' + tow.id">
                         <template slot="title">
@@ -56,9 +56,9 @@
             ])  
         },
         methods: {
-            ...mapMutations({
-                getCode:"main/getCode"
-            }),
+            ...mapMutations('main',[
+                'getCode'
+            ]),
             handleSelect(index,indexPath){
                 console.log(index,indexPath);
             }
