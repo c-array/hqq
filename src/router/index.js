@@ -15,9 +15,19 @@ export default new Router({
           component: resolve => require(['@/components/groceries/index'],resolve),
         },
         {
-          path: 'groceries/check', //杂货铺-审核通过
+          path: 'groceries/check/:title/:subtitle', //杂货铺-审核通过
           name: 'check',
           component: resolve => require(['@/components/groceries/check-success'],resolve),
+        },
+        {
+          path: 'groceries/check-not/:title/:subtitle', //杂货铺-审核通过
+          name: 'check-not',
+          component: resolve => require(['@/components/groceries/check-not-success'],resolve),
+        },
+        {
+          path: 'groceries/await/:title/:subtitle', //杂货铺-审核通过
+          name: 'await',
+          component: resolve => require(['@/components/groceries/await'],resolve),
         },
         {
           path: 'supplier',//供应商

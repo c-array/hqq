@@ -16,17 +16,17 @@ export default {
                     {
                         id:3,
                         name:"审核通过",
-                        url:"/groceries/check",
+                        url:"check",
                     },
                     {
                         id:4,
                         name:"审核未通过",
-                        url:"",
+                        url:"check-not",
                     },
                     {
                         id:5,
                         name:"待认证",
-                        url:"",
+                        url:"await",
                     }
                 ]
             },

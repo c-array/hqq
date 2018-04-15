@@ -10,6 +10,12 @@
   padding: 10px 20px;
   background-color: #fff;
 }
+.search-box .el-select {
+  display: block;
+}
+.search-box .el-cascader {
+  display: block;
+}
 .query-btn {
   text-align: center;
 }
