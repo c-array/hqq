@@ -1,6 +1,6 @@
 <template>
     <el-container class="inner main">
-        <el-aside width="250px">
+        <el-aside width="280px">
             <el-menu 
                 background-color="#616c88"
                 text-color="#fff"
@@ -11,16 +11,23 @@
                         <i :class="item.icon"></i>
                         <span>{{item.name}}</span>
                     </template>
-                    <el-menu-item v-if="!tow.second" :key="tow.id" v-for="tow in item.second" :index="'' + tow.id">{{tow.name}}</el-menu-item>
+                    <el-menu-item v-if="!tow.second" :key="tow.id" v-for="tow in item.second" :index="'' + tow.id">
+                        <router-link :to="tow.url" tag="span">{{tow.name}}</router-link>
+                    </el-menu-item>
                     <el-submenu v-else :index="'' + tow.id">
-                        <template slot="title">{{tow.name}}</template>
+                        <template slot="title">
+                            <i style="margin-right:0;" :class="tow.icon"></i>
+                            <span>{{tow.name}}</span>
+                        </template>
                         <el-menu-item :key="three.id" v-for="three in tow.second" :index="'' + three.id">{{three.name}}</el-menu-item>
                     </el-submenu>
                 </el-submenu>
                 
             </el-menu>
         </el-aside>
-        <el-main>Main</el-main>
+        <el-main>
+            <router-view/>
+        </el-main>
     </el-container>
 </template>
 <style scoped lang="less">
@@ -44,14 +51,17 @@
             this.getCode();
         },
         computed: {
-            ...mapState({
-                list: state => state.main.list
-            })  
+            ...mapState('main',[
+                "list"
+            ])  
         },
         methods: {
             ...mapMutations({
                 getCode:"main/getCode"
-            })
+            }),
+            handleSelect(index,indexPath){
+                console.log(index,indexPath);
+            }
         }
     }
 </script>

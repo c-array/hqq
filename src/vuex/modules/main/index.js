@@ -6,18 +6,17 @@ export default {
             {
                 id:1,
                 name:"杂货铺管理",
-                url:"",
-                icon:"",
+                icon:"icon-groceries",
                 second:[
                     {
                         id:2,
                         name:"待审核",
-                        url:"",
+                        url:"/groceries",
                     },
                     {
                         id:3,
                         name:"审核通过",
-                        url:"",
+                        url:"/groceries/check",
                     },
                     {
                         id:4,
@@ -35,7 +34,7 @@ export default {
                 id:6,
                 name:"供应商管理",
                 url:"",
-                icon:"",
+                icon:"icon-supplier",
                 second:[
                     {
                         id:7,
@@ -58,7 +57,7 @@ export default {
                 id:10,
                 name:"选品库",
                 url:"",
-                icon:"",
+                icon:"icon-electoral",
                 second:[
                     {
                         id:11,
@@ -74,6 +73,7 @@ export default {
                         id:13,
                         name:"类目管理",
                         url:"",
+                        icon:"icon-point",
                         second:[
                             {
                                 id:14,
@@ -101,6 +101,7 @@ export default {
                         id:18,
                         name:"品牌管理",
                         url:"",
+                        icon:"icon-point",
                         second:[
                             {
                                 id:19,
@@ -125,7 +126,7 @@ export default {
                 id:22,
                 name:"供应商商品管理",
                 url:"",
-                icon:"",
+                icon:"icon-commodity",
                 second:[
                     {
                         id:23,
@@ -138,7 +139,7 @@ export default {
                 id:24,
                 name:"订单管理",
                 url:"",
-                icon:"",
+                icon:"icon-order",
                 second:[
                     {
                         id:25,
@@ -151,7 +152,7 @@ export default {
                 id:26,
                 name:"商品信息更新",
                 url:"",
-                icon:"",
+                icon:"icon-commodity-info",
                 second:[
                     {
                         id:27,
@@ -174,7 +175,7 @@ export default {
                 id:30,
                 name:"商品合并自检",
                 url:"",
-                icon:"",
+                icon:"icon-merge",
                 second:[
                     {
                         id:31,
@@ -187,7 +188,7 @@ export default {
                 id:32,
                 name:"神批录入",
                 url:"",
-                icon:"",
+                icon:"icon-entry",
                 second:[
                     {
                         id:33,
@@ -200,13 +201,13 @@ export default {
                 id:34,
                 name:"日志列表",
                 url:"",
-                icon:""
+                icon:"icon-logs"
             },
             {
                 id:35,
                 name:"常用工具",
                 url:"",
-                icon:"",
+                icon:"icon-tools",
                 second:[
                     {
                         id:36,

@@ -1,12 +1,39 @@
 .main{
     .el-menu{
+        .el-submenu__title i{
+            color: #fff;
+            margin-right: 10px;
+        }
+        .el-menu--inline{
+            .el-submenu{
+                .el-submenu__title{
+                    padding-left: 54px !important;
+                }
+                .el-menu-item{
+                    padding-left: 80px !important;
+                }
+            }
+            .el-menu-item{
+                background-color: #4e5871 !important;
+                padding-left: 58px !important;
+            }
+        }
         .is-opened{
             .el-submenu__title{
                 background-color: #4e5871 !important;
             }
             .el-menu{
+                .el-submenu{
+                    .el-submenu__title{
+                        padding-left: 54px !important;
+                    }
+                    .el-menu-item{
+                        padding-left: 80px !important;
+                    }
+                }
                 .el-menu-item{
                     background-color: #4e5871 !important;
+                    padding-left: 58px !important;
                     &:focus,&:hover{
                         background-color: #404a62 !important;
                     }
