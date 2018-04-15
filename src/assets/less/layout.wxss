@@ -1,0 +1,10 @@
+.main .el-menu .is-opened .el-submenu__title {
+  background-color: #4e5871 !important;
+}
+.main .el-menu .is-opened .el-menu .el-menu-item {
+  background-color: #4e5871 !important;
+}
+.main .el-menu .is-opened .el-menu .el-menu-item:focus,
+.main .el-menu .is-opened .el-menu .el-menu-item:hover {
+  background-color: #404a62 !important;
+}
